@@ -1,0 +1,1 @@
+Data in json form coming from the emastercard using the autosync will be stored here

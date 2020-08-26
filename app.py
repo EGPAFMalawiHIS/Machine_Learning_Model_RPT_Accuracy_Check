@@ -1,3 +1,4 @@
 from preprocessing.preprocessing_part1 import *
 
-main()
+indicator_mapper = IndicatorMapper()
+indicator_mapper.main()

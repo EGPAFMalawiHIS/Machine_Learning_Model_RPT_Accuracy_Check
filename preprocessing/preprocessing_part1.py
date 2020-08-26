@@ -1,25 +1,26 @@
-import json
-import glob
+
 import sys
 import os
 import numpy as np
+from common.helper import *
 
-DATAFOLDER = './data'
-def loadJson(file):
-	data = json.load(file)
-	return data
-def collectFiles():
-	chafiles = glob.glob(DATAFOLDER+'/*.json')
-	return chafiles
+class IndicatorMapper:
+	def __init__(self):
+		self.data_folder = './data'
+		self.helper = Helper()
 
-def main():
-	chafiles = collectFiles()
-	for file in chafiles:
-		files_json = file
-		with open(files_json) as jsonfile:
-			data = loadJson(jsonfile)
-			print('Data:',data)
-			sys.exit()
-			for category in categories:
-				print(category)
+	def getSite(self,data):
+		site = []
+		site.append({sitecode:data['sitecode'],sitename:data['sitename']})
+
+	def main(self):
+		chafiles = self.helper.collectFiles(self.data_folder,'.json')
+		for file in chafiles:
+			files_json = file
+			with open(files_json) as jsonfile:
+				data = self.helper.loadJson(jsonfile)
+				print('Data:',data)
 				sys.exit()
+				for category in categories:
+					print(category)
+					sys.exit()
