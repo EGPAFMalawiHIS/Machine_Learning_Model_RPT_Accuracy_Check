@@ -4,6 +4,6 @@ A Machine Learning pipeline which validates if the indicators from the e-masterc
 # Architecture
 [Architecture Diagram](https://pedaidsorg-my.sharepoint.com/:b:/g/personal/cmaere_pedaids_org/ET4tuHsQCSFGlwrLX5mrRWgBrWjQqb2eHQsY3Nr8Ur5CGw?e=X9QObm).
 
-#Preprocessing logic flow
+# Preprocessing logic flow
 
 link to be inserted
